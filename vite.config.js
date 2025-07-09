@@ -1,4 +1,13 @@
-// vite.config.js
+import { resolve } from 'path';
+
 export default {
-  base: '/task-app/', // replace with your repo name
+  base: '/task-app/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        login: resolve(__dirname, 'login.html')
+      }
+    }
+  }
 }
