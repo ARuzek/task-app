@@ -10,14 +10,14 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/task-app/src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
     <script>
       if (window.location.pathname.endsWith('login.html')) {
-        import('/task-app/src/qr-login.js');
+        import('src/qr-login.js');
       }
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/task-app/sw.js');
+          navigator.serviceWorker.register('sw.js');
         });
       }
     </script>
