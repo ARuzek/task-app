@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+
+<div class="mdl-card mdl-shadow--2dp" style="margin:2em auto;max-width:400px;padding:2em;">
+  <h2 class="mdl-typography--title">Login via QR Code</h2>
+  <video id="qr-video" style="width: 100%; height: 300px; border: 1px solid #ccc;"></video>
+  <div id="qr-result" style="margin-top: 1em; color: green;"></div>
+</div>
+<script type="module" src="/task-app/src/qr-login.js"></script>
+
+</body>
+</html>
