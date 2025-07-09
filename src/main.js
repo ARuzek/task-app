@@ -328,5 +328,5 @@ if (getCurrentUser()) {
   }
   showMainApp();
 } else {
-  document.querySelector('#app').innerHTML = `<a href="/src/login.html">Login via QR Code</a>`;
+  document.querySelector('#app').innerHTML = `<a href="/task-app/src/login.html">Login via QR Code</a>`;
 }
